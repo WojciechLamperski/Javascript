@@ -1,14 +1,10 @@
-var youLikeMeat = true;
-var myNum = 10;
+var myAge =25;
+if(myAge < 18 || myAge > 30 || myAge === 25){
 
-if (myNum > 10){
-    document.write("myNum is greater than 10. ");
-}else{
-    document.write("myNum is not greater than 10. ");
-}
+    document.write("you aint coming!");
 
-if (myNum == 10){
-    document.write("myNum is equal to 10. ");
-}else{
-    ddocument.write("myNum is not equal to 10. ");
+} else{
+
+    document.write("You can come, you cool dude");
+
 }
