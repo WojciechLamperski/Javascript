@@ -1,29 +1,24 @@
-var myString = 'I\'m a "fun" string'; //Escaping character with "\"
+var myArray = new Array();
+myArray [0] = [8];
+myArray [1] = ["hello"];
 
-console.log(myString);
-console.log(myString.length); //Property of a string
-console.log(myString.toUpperCase()); // Method of a string
-console.log(myString.indexOf("string")) // This method says at which point in a sentance the word "string" starts
-console.log(myString.indexOf("Ninja")) // return -1 to let you know word doesn't exist
+var myCar = new Object();
+myCar.maxSpeed = 120;
+myCar.driver = "Shaun";
 
-if(myString.indexOf("ninja") === -1){
+myCar.drive = function() { console.log("now driving");};
 
-    console.log("the word \"ninja\" is not in the string")
+myCar.drive();
 
-} else{
-    console.log("the word \"ninja\" starts at position " + myString.indexOf("ninja"));
-}
+var myArray2 = [true, 15, "hi"];
 
-//Comparing strings:
+var myCar2 = {
+    maxSpeed: 70, 
+    driver: "Net Ninja", 
+    distanceTraveled: function(speed, time) { 
+        console.log(speed * time);
+    } 
+};
 
-var string1 = "abc";
-var string2 = "abC";
-
-console.log(string1 === string2);
-console.log(string1.toLowerCase() === string2.toLowerCase());
-
-console.log(string1 < string2);
-
-var string1 = "Abc";
-
-console.log(string1 < string2);
+console.log(myCar2.maxSpeed);
+myCar2.distanceTraveled();
