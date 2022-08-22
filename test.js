@@ -17,8 +17,12 @@ var myCar2 = {
     driver: "Net Ninja", 
     distanceTraveled: function(speed, time) { 
         console.log(speed * time);
+    },
+    logDriver: function(){
+        console.log("driver name is " + this.driver);
     } 
 };
 
+myCar2.logDriver();
 console.log(myCar2.maxSpeed);
-myCar2.distanceTraveled();
+myCar2.distanceTraveled(50, 3);
