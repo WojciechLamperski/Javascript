@@ -1,16 +1,15 @@
+var content = document.querySelector("#content");
+var button = document.querySelector("#show-more");
 
-var birthday = new Date(1985, 0, 15, 11, 15, 25);
-var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
+button.onclick = function(){
 
-console.log(birthday.getMonth());
-console.log(birthday.getFullYear());
-console.log(birthday.getDate());
-console.log(birthday.getDay());
-console.log(birthday.getHours());
-console.log(birthday.getTime());
-
-if(birthday.getTime() == birthday2.getTime()){
-    console.log("birtdays are equal");
-} else{
-    console.log("birtdays are not equal");
-}
+    if(content.className == "open"){
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    }else{
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
+};
