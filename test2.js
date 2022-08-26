@@ -10,7 +10,11 @@ console.log(birthday.getHours());
 console.log(birthday.getTime());
 
 if(birthday.getTime() == birthday2.getTime()){
+
     console.log("birtdays are equal");
+    
 } else{
+
     console.log("birtdays are not equal");
+
 }
